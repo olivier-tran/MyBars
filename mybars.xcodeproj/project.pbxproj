@@ -19,8 +19,12 @@
 		B03566AD184E7DAC00AC7DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356695184E7DAC00AC7DF6 /* UIKit.framework */; };
 		B03566B5184E7DAC00AC7DF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B03566B3184E7DAC00AC7DF6 /* InfoPlist.strings */; };
 		B03566B7184E7DAC00AC7DF6 /* mybarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B03566B6184E7DAC00AC7DF6 /* mybarsTests.m */; };
-		B03566C6184E7EF600AC7DF6 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03566C5184E7EF600AC7DF6 /* MapsViewController.m */; };
 		B03566C8184E7F0C00AC7DF6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03566C7184E7F0C00AC7DF6 /* MapKit.framework */; };
+		B03566D6184E84AD00AC7DF6 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03566CF184E84AD00AC7DF6 /* ListViewController.m */; };
+		B03566D7184E84AD00AC7DF6 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03566D1184E84AD00AC7DF6 /* MapsViewController.m */; };
+		B03566D8184E84AD00AC7DF6 /* image-list-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B03566D4184E84AD00AC7DF6 /* image-list-1.png */; };
+		B03566DA184E855900AC7DF6 /* image-list-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B03566D9184E855900AC7DF6 /* image-list-2.png */; };
+		B03566DC184E878800AC7DF6 /* image-list-x.png in Resources */ = {isa = PBXBuildFile; fileRef = B03566DB184E878800AC7DF6 /* image-list-x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +54,14 @@
 		B03566B2184E7DAC00AC7DF6 /* mybarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mybarsTests-Info.plist"; sourceTree = "<group>"; };
 		B03566B4184E7DAC00AC7DF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B03566B6184E7DAC00AC7DF6 /* mybarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mybarsTests.m; sourceTree = "<group>"; };
-		B03566C4184E7EF600AC7DF6 /* MapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
-		B03566C5184E7EF600AC7DF6 /* MapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
 		B03566C7184E7F0C00AC7DF6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B03566CE184E84AD00AC7DF6 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		B03566CF184E84AD00AC7DF6 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		B03566D0184E84AD00AC7DF6 /* MapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
+		B03566D1184E84AD00AC7DF6 /* MapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
+		B03566D4184E84AD00AC7DF6 /* image-list-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-list-1.png"; sourceTree = "<group>"; };
+		B03566D9184E855900AC7DF6 /* image-list-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-list-2.png"; sourceTree = "<group>"; };
+		B03566DB184E878800AC7DF6 /* image-list-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image-list-x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +123,11 @@
 		B0356697184E7DAC00AC7DF6 /* mybars */ = {
 			isa = PBXGroup;
 			children = (
-				B03566C0184E7E6D00AC7DF6 /* Components */,
-				B03566C1184E7E6D00AC7DF6 /* Controllers */,
-				B03566C2184E7E6D00AC7DF6 /* Models */,
-				B03566C3184E7E6D00AC7DF6 /* Views */,
+				B03566CC184E84AD00AC7DF6 /* Components */,
+				B03566CD184E84AD00AC7DF6 /* Controllers */,
+				B03566D2184E84AD00AC7DF6 /* Models */,
+				B03566D3184E84AD00AC7DF6 /* Resources */,
+				B03566D5184E84AD00AC7DF6 /* Views */,
 				B03566A0184E7DAC00AC7DF6 /* AppDelegate.h */,
 				B03566A1184E7DAC00AC7DF6 /* AppDelegate.m */,
 				B03566A3184E7DAC00AC7DF6 /* Images.xcassets */,
@@ -155,35 +165,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B03566C0184E7E6D00AC7DF6 /* Components */ = {
+		B03566CC184E84AD00AC7DF6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Components;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		B03566C1184E7E6D00AC7DF6 /* Controllers */ = {
+		B03566CD184E84AD00AC7DF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B03566C4184E7EF600AC7DF6 /* MapsViewController.h */,
-				B03566C5184E7EF600AC7DF6 /* MapsViewController.m */,
+				B03566CE184E84AD00AC7DF6 /* ListViewController.h */,
+				B03566CF184E84AD00AC7DF6 /* ListViewController.m */,
+				B03566D0184E84AD00AC7DF6 /* MapsViewController.h */,
+				B03566D1184E84AD00AC7DF6 /* MapsViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		B03566C2184E7E6D00AC7DF6 /* Models */ = {
+		B03566D2184E84AD00AC7DF6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		B03566C3184E7E6D00AC7DF6 /* Views */ = {
+		B03566D3184E84AD00AC7DF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B03566DB184E878800AC7DF6 /* image-list-x.png */,
+				B03566D9184E855900AC7DF6 /* image-list-2.png */,
+				B03566D4184E84AD00AC7DF6 /* image-list-1.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B03566D5184E84AD00AC7DF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Views;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -261,6 +283,9 @@
 			files = (
 				B035669C184E7DAC00AC7DF6 /* InfoPlist.strings in Resources */,
 				B03566A4184E7DAC00AC7DF6 /* Images.xcassets in Resources */,
+				B03566DA184E855900AC7DF6 /* image-list-2.png in Resources */,
+				B03566DC184E878800AC7DF6 /* image-list-x.png in Resources */,
+				B03566D8184E84AD00AC7DF6 /* image-list-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +306,8 @@
 			files = (
 				B03566A2184E7DAC00AC7DF6 /* AppDelegate.m in Sources */,
 				B035669E184E7DAC00AC7DF6 /* main.m in Sources */,
-				B03566C6184E7EF600AC7DF6 /* MapsViewController.m in Sources */,
+				B03566D6184E84AD00AC7DF6 /* ListViewController.m in Sources */,
+				B03566D7184E84AD00AC7DF6 /* MapsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +508,7 @@
 				B03566BC184E7DAC00AC7DF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B03566BD184E7DAC00AC7DF6 /* Build configuration list for PBXNativeTarget "mybarsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +517,7 @@
 				B03566BF184E7DAC00AC7DF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
