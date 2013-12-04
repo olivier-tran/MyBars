@@ -14,4 +14,7 @@
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, strong) NSString *price;
 @property (nonatomic, strong) NSString *image;
+@property (nonatomic) float lat;
+@property (nonatomic) float lng;
+
 @end

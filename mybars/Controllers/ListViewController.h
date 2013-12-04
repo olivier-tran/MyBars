@@ -10,5 +10,6 @@
 
 @interface ListViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *data;
 
 @end

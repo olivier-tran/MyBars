@@ -12,6 +12,7 @@
 		AB348313184F7B2B00CD608D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348312184F7B2B00CD608D /* button.png */; };
 		AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5450E3184FCA3C00BB33C1 /* button-hover.png */; };
 		B01CCAF1184FE161005BF744 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = B01CCAF0184FE161005BF744 /* Bar.m */; };
+		B01CCAF4184FE5DF005BF744 /* PinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B01CCAF3184FE5DF005BF744 /* PinView.m */; };
 		B0356692184E7DAC00AC7DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356691184E7DAC00AC7DF6 /* Foundation.framework */; };
 		B0356694184E7DAC00AC7DF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */; };
 		B0356696184E7DAC00AC7DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356695184E7DAC00AC7DF6 /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		AB5450E3184FCA3C00BB33C1 /* button-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-hover.png"; sourceTree = "<group>"; };
 		B01CCAEF184FE161005BF744 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
 		B01CCAF0184FE161005BF744 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		B01CCAF2184FE5DF005BF744 /* PinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
+		B01CCAF3184FE5DF005BF744 /* PinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinView.m; sourceTree = "<group>"; };
 		B035668E184E7DAC00AC7DF6 /* mybars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mybars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0356691184E7DAC00AC7DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -178,10 +181,10 @@
 		B03566CD184E84AD00AC7DF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B03566CE184E84AD00AC7DF6 /* ListViewController.h */,
-				B03566CF184E84AD00AC7DF6 /* ListViewController.m */,
 				B03566D0184E84AD00AC7DF6 /* MapsViewController.h */,
 				B03566D1184E84AD00AC7DF6 /* MapsViewController.m */,
+				B03566CE184E84AD00AC7DF6 /* ListViewController.h */,
+				B03566CF184E84AD00AC7DF6 /* ListViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +215,8 @@
 		B03566D5184E84AD00AC7DF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B01CCAF2184FE5DF005BF744 /* PinView.h */,
+				B01CCAF3184FE5DF005BF744 /* PinView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01CCAF4184FE5DF005BF744 /* PinView.m in Sources */,
 				B03566A2184E7DAC00AC7DF6 /* AppDelegate.m in Sources */,
 				B035669E184E7DAC00AC7DF6 /* main.m in Sources */,
 				B01CCAF1184FE161005BF744 /* Bar.m in Sources */,

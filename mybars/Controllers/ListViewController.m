@@ -12,7 +12,6 @@
 @interface ListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *data;
 
 @end
 
@@ -37,28 +36,6 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:102.0/255.0 green:207.0/255.0 blue:203.0/255.0 alpha:1.0];
     self.navigationController.navigationBar.translucent = NO;
-    
-    
-    // Data
-    Bar *bar1 = [Bar new];
-    bar1.name = @"La Mécanique Ondulatoire";
-    bar1.address = @"8, Passage Thiéré - 11e";
-    bar1.price = @"4€";
-    bar1.image = @"image-list-1";
-    
-    Bar *bar2 = [Bar new];
-    bar2.name = @"L'UFO";
-    bar2.address = @"49, rue Jean-Pierre Thimbaud - 11e";
-    bar2.price = @"3,5€";
-    bar2.image = @"image-list-2";
-    
-    Bar *bar3 = [Bar new];
-    bar3.name = @"La Mécanique Ondulatoire";
-    bar3.address = @"8, Passage Thiéré - 11e";
-    bar3.price = @"4€";
-    bar3.image = @"image-list-x";
-    
-    self.data = @[bar1,bar2,bar3];
     
     // TableView
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height)];
