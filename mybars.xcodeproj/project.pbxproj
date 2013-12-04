@@ -11,6 +11,7 @@
 		AB348311184F6FE200CD608D /* icon-beer.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348310184F6FE200CD608D /* icon-beer.png */; };
 		AB348313184F7B2B00CD608D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348312184F7B2B00CD608D /* button.png */; };
 		AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5450E3184FCA3C00BB33C1 /* button-hover.png */; };
+		B01CCAF1184FE161005BF744 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = B01CCAF0184FE161005BF744 /* Bar.m */; };
 		B0356692184E7DAC00AC7DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356691184E7DAC00AC7DF6 /* Foundation.framework */; };
 		B0356694184E7DAC00AC7DF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */; };
 		B0356696184E7DAC00AC7DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356695184E7DAC00AC7DF6 /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		AB348310184F6FE200CD608D /* icon-beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beer.png"; sourceTree = "<group>"; };
 		AB348312184F7B2B00CD608D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		AB5450E3184FCA3C00BB33C1 /* button-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-hover.png"; sourceTree = "<group>"; };
+		B01CCAEF184FE161005BF744 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		B01CCAF0184FE161005BF744 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
 		B035668E184E7DAC00AC7DF6 /* mybars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mybars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0356691184E7DAC00AC7DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +189,8 @@
 		B03566D2184E84AD00AC7DF6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B01CCAEF184FE161005BF744 /* Bar.h */,
+				B01CCAF0184FE161005BF744 /* Bar.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 			files = (
 				B03566A2184E7DAC00AC7DF6 /* AppDelegate.m in Sources */,
 				B035669E184E7DAC00AC7DF6 /* main.m in Sources */,
+				B01CCAF1184FE161005BF744 /* Bar.m in Sources */,
 				B03566D6184E84AD00AC7DF6 /* ListViewController.m in Sources */,
 				B03566D7184E84AD00AC7DF6 /* MapsViewController.m in Sources */,
 			);

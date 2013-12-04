@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "Bar.h"
 
 @interface ListViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -37,32 +38,27 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:102.0/255.0 green:207.0/255.0 blue:203.0/255.0 alpha:1.0];
     self.navigationController.navigationBar.translucent = NO;
     
+    
     // Data
-    self.data = @[
-                  @{@"title":@"La Mécanique Ondulatoire",
-                    @"pin":@"icon-pin",
-                    @"address":@"8, Passage Thiéré - 11e",
-                    @"beer":@"icon-beer",
-                    @"price":@"4€",
-                    @"image":@"image-list-1",
-                    @"button":@"button"},
-                  
-                  @{@"title":@"L'UFO",
-                    @"pin":@"icon-pin",
-                    @"address":@"49, rue Jean-Pierre Thimbaud - 11e",
-                    @"beer":@"icon-beer",
-                    @"price":@"3,5€",
-                    @"image":@"image-list-2",
-                    @"button":@"button"},
-                  
-                  @{@"title":@"La Mécanique Ondulatoire",
-                    @"pin":@"icon-pin",
-                    @"address":@"8, Passage Thiéré - 11e",
-                    @"beer":@"icon-beer",
-                    @"price":@"4€",
-                    @"image":@"image-list-x",
-                    @"button":@"button"}
-                  ];
+    Bar *bar1 = [Bar new];
+    bar1.name = @"La Mécanique Ondulatoire";
+    bar1.address = @"8, Passage Thiéré - 11e";
+    bar1.price = @"4€";
+    bar1.image = @"image-list-1";
+    
+    Bar *bar2 = [Bar new];
+    bar2.name = @"L'UFO";
+    bar2.address = @"49, rue Jean-Pierre Thimbaud - 11e";
+    bar2.price = @"3,5€";
+    bar2.image = @"image-list-2";
+    
+    Bar *bar3 = [Bar new];
+    bar3.name = @"La Mécanique Ondulatoire";
+    bar3.address = @"8, Passage Thiéré - 11e";
+    bar3.price = @"4€";
+    bar3.image = @"image-list-x";
+    
+    self.data = @[bar1,bar2,bar3];
     
     // TableView
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.bounds.size.height)];
@@ -115,11 +111,11 @@
     [cell setBackgroundColor:[UIColor darkGrayColor]];
     
     // Object data
-    NSDictionary *object = [self.data objectAtIndex:indexPath.row];
+    Bar *bar = [self.data objectAtIndex:indexPath.row];
     
     // Image
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 110.0)];
-    imageView.image = [UIImage imageNamed:[object objectForKey:@"image"]];
+    imageView.image = [UIImage imageNamed:bar.image];
     [cell addSubview:imageView];
     
     // Title
@@ -127,12 +123,12 @@
     title.backgroundColor = [UIColor clearColor];
     title.font = [UIFont fontWithName:@"HelveticaNeue-Medium" size:18.0];
     title.textColor = [UIColor whiteColor];
-    title.text = [object objectForKey:@"title"];
+    title.text = bar.name;
     [cell addSubview:title];
     
     // Address Icon
     UIImageView *pin = [[UIImageView alloc] initWithFrame:CGRectMake(15.0, 43.0, 9.0, 15.0)];
-    pin.image = [UIImage imageNamed:[object objectForKey:@"pin"]];
+    pin.image = [UIImage imageNamed:@"icon-pin"];
     [cell addSubview:pin];
     
     // + UILabel (address)
@@ -140,12 +136,12 @@
     address.backgroundColor = [UIColor clearColor];
     address.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
     address.textColor = [UIColor whiteColor];
-    address.text = [object objectForKey:@"address"];
+    address.text = bar.address;
     [cell addSubview:address];
     
     // Beer Icon
     UIImageView *beer = [[UIImageView alloc] initWithFrame:CGRectMake(15.0, 62.5, 11.0, 13.0)];
-    beer.image = [UIImage imageNamed:[object objectForKey:@"beer"]];
+    beer.image = [UIImage imageNamed:@"icon-beer"];
     [cell addSubview:beer];
     
     // + UILabel (price)
@@ -153,14 +149,14 @@
     price.backgroundColor = [UIColor clearColor];
     price.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
     price.textColor = [UIColor whiteColor];
-    price.text = [object objectForKey:@"price"];
+    price.text = bar.price;
     [cell addSubview:price];
     
     // + UIButton (details)
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.frame = CGRectMake(222.0, 82.0, 72.0, 21.0);
     [button setTitle:@"Details" forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage imageNamed:@"button.png"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"button"] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
     [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
     [cell addSubview:button];
