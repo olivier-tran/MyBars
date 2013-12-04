@@ -39,9 +39,29 @@
     
     // Data
     self.data = @[
-                  @{@"title":@"La Mécanique Ondulatoire", @"address":@"8, Passage Thiéré - 11e", @"price":@"4€", @"image":@"image-list-1"},
-                  @{@"title":@"L'UFO", @"address":@"15, rue Henry - 13e", @"price":@"14€", @"image":@"image-list-2"},
-                  @{@"title":@"La Mécanique Ondulatoire", @"address":@"8, Passage Thiéré - 11e", @"price":@"4€", @"image":@"image-list-x"}
+                  @{@"title":@"La Mécanique Ondulatoire",
+                    @"pin":@"icon-pin",
+                    @"address":@"8, Passage Thiéré - 11e",
+                    @"beer":@"icon-beer",
+                    @"price":@"4€",
+                    @"image":@"image-list-1",
+                    @"button":@"button"},
+                  
+                  @{@"title":@"L'UFO",
+                    @"pin":@"icon-pin",
+                    @"address":@"49, rue Jean-Pierre Thimbaud - 11e",
+                    @"beer":@"icon-beer",
+                    @"price":@"3,5€",
+                    @"image":@"image-list-2",
+                    @"button":@"button"},
+                  
+                  @{@"title":@"La Mécanique Ondulatoire",
+                    @"pin":@"icon-pin",
+                    @"address":@"8, Passage Thiéré - 11e",
+                    @"beer":@"icon-beer",
+                    @"price":@"4€",
+                    @"image":@"image-list-x",
+                    @"button":@"button"}
                   ];
     
     // TableView
@@ -110,12 +130,42 @@
     title.text = [object objectForKey:@"title"];
     [cell addSubview:title];
     
+    // Address Icon
+    UIImageView *pin = [[UIImageView alloc] initWithFrame:CGRectMake(15.0, 43.0, 9.0, 15.0)];
+    pin.image = [UIImage imageNamed:[object objectForKey:@"pin"]];
+    [cell addSubview:pin];
     
     // + UILabel (address)
-    // + UILabel (price)
-    // + UIImageView (icon)
-    // + UIButton (details)
+    UILabel *address = [[UILabel alloc] initWithFrame:CGRectMake(33.5, 44.0, 200.0, 10.0)];
+    address.backgroundColor = [UIColor clearColor];
+    address.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
+    address.textColor = [UIColor whiteColor];
+    address.text = [object objectForKey:@"address"];
+    [cell addSubview:address];
     
+    // Beer Icon
+    UIImageView *beer = [[UIImageView alloc] initWithFrame:CGRectMake(15.0, 62.5, 11.0, 13.0)];
+    beer.image = [UIImage imageNamed:[object objectForKey:@"beer"]];
+    [cell addSubview:beer];
+    
+    // + UILabel (price)
+    UILabel *price = [[UILabel alloc] initWithFrame:CGRectMake(33.5, 58.5, 160.0, 20.0)];
+    price.backgroundColor = [UIColor clearColor];
+    price.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.0];
+    price.textColor = [UIColor whiteColor];
+    price.text = [object objectForKey:@"price"];
+    [cell addSubview:price];
+    
+    // + UIButton (details)
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    button.frame = CGRectMake(222.0, 82.0, 72.0, 21.0);
+    [button setTitle:@"Details" forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"button.png"] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
+    [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [cell addSubview:button];
+
+
     // Border bottom
     CALayer *borderBottom = [[CALayer alloc] init];
     borderBottom.frame = CGRectMake(0.0, 109.0, 320.0, 2.0);
@@ -123,6 +173,10 @@
     [cell.layer addSublayer:borderBottom];
     
     return cell;
+}
+
+-(void) buttonPressed {
+    NSLog(@"Button Pressed!");
 }
 
 @end

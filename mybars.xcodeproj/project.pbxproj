@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB34830F184F6B4000CD608D /* icon-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = AB34830E184F6B4000CD608D /* icon-pin.png */; };
+		AB348311184F6FE200CD608D /* icon-beer.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348310184F6FE200CD608D /* icon-beer.png */; };
+		AB348313184F7B2B00CD608D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348312184F7B2B00CD608D /* button.png */; };
+		AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5450E3184FCA3C00BB33C1 /* button-hover.png */; };
 		B0356692184E7DAC00AC7DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356691184E7DAC00AC7DF6 /* Foundation.framework */; };
 		B0356694184E7DAC00AC7DF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */; };
 		B0356696184E7DAC00AC7DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356695184E7DAC00AC7DF6 /* UIKit.framework */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB34830E184F6B4000CD608D /* icon-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-pin.png"; sourceTree = "<group>"; };
+		AB348310184F6FE200CD608D /* icon-beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beer.png"; sourceTree = "<group>"; };
+		AB348312184F7B2B00CD608D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		AB5450E3184FCA3C00BB33C1 /* button-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-hover.png"; sourceTree = "<group>"; };
 		B035668E184E7DAC00AC7DF6 /* mybars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mybars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0356691184E7DAC00AC7DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B0356693184E7DAC00AC7DF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,7 +131,6 @@
 		B0356697184E7DAC00AC7DF6 /* mybars */ = {
 			isa = PBXGroup;
 			children = (
-				B03566CC184E84AD00AC7DF6 /* Components */,
 				B03566CD184E84AD00AC7DF6 /* Controllers */,
 				B03566D2184E84AD00AC7DF6 /* Models */,
 				B03566D3184E84AD00AC7DF6 /* Resources */,
@@ -165,13 +172,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B03566CC184E84AD00AC7DF6 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		B03566CD184E84AD00AC7DF6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +193,10 @@
 		B03566D3184E84AD00AC7DF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB5450E3184FCA3C00BB33C1 /* button-hover.png */,
+				AB348312184F7B2B00CD608D /* button.png */,
+				AB348310184F6FE200CD608D /* icon-beer.png */,
+				AB34830E184F6B4000CD608D /* icon-pin.png */,
 				B03566DB184E878800AC7DF6 /* image-list-x.png */,
 				B03566D9184E855900AC7DF6 /* image-list-2.png */,
 				B03566D4184E84AD00AC7DF6 /* image-list-1.png */,
@@ -282,9 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B035669C184E7DAC00AC7DF6 /* InfoPlist.strings in Resources */,
+				AB348313184F7B2B00CD608D /* button.png in Resources */,
+				AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */,
 				B03566A4184E7DAC00AC7DF6 /* Images.xcassets in Resources */,
+				AB34830F184F6B4000CD608D /* icon-pin.png in Resources */,
 				B03566DA184E855900AC7DF6 /* image-list-2.png in Resources */,
 				B03566DC184E878800AC7DF6 /* image-list-x.png in Resources */,
+				AB348311184F6FE200CD608D /* icon-beer.png in Resources */,
 				B03566D8184E84AD00AC7DF6 /* image-list-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
