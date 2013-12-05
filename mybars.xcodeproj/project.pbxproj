@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB34830F184F6B4000CD608D /* icon-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = AB34830E184F6B4000CD608D /* icon-pin.png */; };
-		AB348311184F6FE200CD608D /* icon-beer.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348310184F6FE200CD608D /* icon-beer.png */; };
 		AB348313184F7B2B00CD608D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = AB348312184F7B2B00CD608D /* button.png */; };
 		AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = AB5450E3184FCA3C00BB33C1 /* button-hover.png */; };
+		AB9732B61851156800D1648F /* icon-beer-big.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9732B31851156800D1648F /* icon-beer-big.png */; };
+		AB9732B71851156800D1648F /* icon-beer.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9732B41851156800D1648F /* icon-beer.png */; };
+		AB9732B81851156800D1648F /* icon-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9732B51851156800D1648F /* icon-pin.png */; };
+		ABDF41571850834A00D6840E /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDF41561850834A00D6840E /* BarViewController.m */; };
+		ABDF415C1850BCEA00D6840E /* bar-1.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDF415B1850BCEA00D6840E /* bar-1.png */; };
 		B01CCAF1184FE161005BF744 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = B01CCAF0184FE161005BF744 /* Bar.m */; };
 		B01CCAF4184FE5DF005BF744 /* PinView.m in Sources */ = {isa = PBXBuildFile; fileRef = B01CCAF3184FE5DF005BF744 /* PinView.m */; };
 		B0356692184E7DAC00AC7DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0356691184E7DAC00AC7DF6 /* Foundation.framework */; };
@@ -44,10 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB34830E184F6B4000CD608D /* icon-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-pin.png"; sourceTree = "<group>"; };
-		AB348310184F6FE200CD608D /* icon-beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beer.png"; sourceTree = "<group>"; };
 		AB348312184F7B2B00CD608D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		AB5450E3184FCA3C00BB33C1 /* button-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-hover.png"; sourceTree = "<group>"; };
+		AB9732B31851156800D1648F /* icon-beer-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beer-big.png"; sourceTree = "<group>"; };
+		AB9732B41851156800D1648F /* icon-beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beer.png"; sourceTree = "<group>"; };
+		AB9732B51851156800D1648F /* icon-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-pin.png"; sourceTree = "<group>"; };
+		ABDF41551850834A00D6840E /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarViewController.h; sourceTree = "<group>"; };
+		ABDF41561850834A00D6840E /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarViewController.m; sourceTree = "<group>"; };
+		ABDF415B1850BCEA00D6840E /* bar-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-1.png"; sourceTree = "<group>"; };
 		B01CCAEF184FE161005BF744 /* Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
 		B01CCAF0184FE161005BF744 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
 		B01CCAF2184FE5DF005BF744 /* PinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
@@ -185,6 +192,8 @@
 				B03566D1184E84AD00AC7DF6 /* MapsViewController.m */,
 				B03566CE184E84AD00AC7DF6 /* ListViewController.h */,
 				B03566CF184E84AD00AC7DF6 /* ListViewController.m */,
+				ABDF41551850834A00D6840E /* BarViewController.h */,
+				ABDF41561850834A00D6840E /* BarViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,10 +210,12 @@
 		B03566D3184E84AD00AC7DF6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB9732B31851156800D1648F /* icon-beer-big.png */,
+				AB9732B41851156800D1648F /* icon-beer.png */,
+				AB9732B51851156800D1648F /* icon-pin.png */,
+				ABDF415B1850BCEA00D6840E /* bar-1.png */,
 				AB5450E3184FCA3C00BB33C1 /* button-hover.png */,
 				AB348312184F7B2B00CD608D /* button.png */,
-				AB348310184F6FE200CD608D /* icon-beer.png */,
-				AB34830E184F6B4000CD608D /* icon-pin.png */,
 				B03566DB184E878800AC7DF6 /* image-list-x.png */,
 				B03566D9184E855900AC7DF6 /* image-list-2.png */,
 				B03566D4184E84AD00AC7DF6 /* image-list-1.png */,
@@ -296,13 +307,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B035669C184E7DAC00AC7DF6 /* InfoPlist.strings in Resources */,
+				ABDF415C1850BCEA00D6840E /* bar-1.png in Resources */,
 				AB348313184F7B2B00CD608D /* button.png in Resources */,
 				AB5450E4184FCA3C00BB33C1 /* button-hover.png in Resources */,
 				B03566A4184E7DAC00AC7DF6 /* Images.xcassets in Resources */,
-				AB34830F184F6B4000CD608D /* icon-pin.png in Resources */,
 				B03566DA184E855900AC7DF6 /* image-list-2.png in Resources */,
+				AB9732B61851156800D1648F /* icon-beer-big.png in Resources */,
+				AB9732B81851156800D1648F /* icon-pin.png in Resources */,
 				B03566DC184E878800AC7DF6 /* image-list-x.png in Resources */,
-				AB348311184F6FE200CD608D /* icon-beer.png in Resources */,
+				AB9732B71851156800D1648F /* icon-beer.png in Resources */,
 				B03566D8184E84AD00AC7DF6 /* image-list-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +338,7 @@
 				B01CCAF4184FE5DF005BF744 /* PinView.m in Sources */,
 				B03566A2184E7DAC00AC7DF6 /* AppDelegate.m in Sources */,
 				B035669E184E7DAC00AC7DF6 /* main.m in Sources */,
+				ABDF41571850834A00D6840E /* BarViewController.m in Sources */,
 				B01CCAF1184FE161005BF744 /* Bar.m in Sources */,
 				B03566D6184E84AD00AC7DF6 /* ListViewController.m in Sources */,
 				B03566D7184E84AD00AC7DF6 /* MapsViewController.m in Sources */,

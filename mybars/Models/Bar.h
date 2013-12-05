@@ -2,7 +2,7 @@
 //  Bar.h
 //  mybars
 //
-//  Created by Aymeric Gallissot on 04/12/2013.
+//  Created by Olivier TRAN on 04/12/2013.
 //
 //
 
@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *address;
+@property (nonatomic, strong) NSString *city;
 @property (nonatomic, strong) NSString *price;
 @property (nonatomic, strong) NSString *image;
 @property (nonatomic) float lat;

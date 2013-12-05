@@ -2,7 +2,7 @@
 //  PinView.h
 //  mybars
 //
-//  Created by Aymeric Gallissot on 04/12/2013.
+//  Created by Olivier TRAN on 04/12/2013.
 //
 //
 

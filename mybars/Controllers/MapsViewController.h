@@ -2,7 +2,7 @@
 //  MapsViewController.h
 //  mybars
 //
-//  Created by Aymeric Gallissot on 03/12/13.
+//  Created by Olivier TRAN on 03/12/13.
 //
 //
 

@@ -2,11 +2,12 @@
 //  ListViewController.m
 //  mybars
 //
-//  Created by Aymeric Gallissot on 03/12/13.
+//  Created by Olivier TRAN on 03/12/13.
 //
 //
 
 #import "ListViewController.h"
+#import "BarViewController.h"
 #import "Bar.h"
 
 @interface ListViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -44,6 +45,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -134,6 +136,7 @@
     button.frame = CGRectMake(222.0, 82.0, 72.0, 21.0);
     [button setTitle:@"Details" forState:UIControlStateNormal];
     [button setBackgroundImage:[UIImage imageNamed:@"button"] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"button-hover"] forState:UIControlStateHighlighted];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal ];
     [button addTarget:self action:@selector(buttonPressed) forControlEvents:UIControlEventTouchUpInside];
     [cell addSubview:button];
@@ -149,7 +152,9 @@
 }
 
 -(void) buttonPressed {
-    NSLog(@"Button Pressed!");
+    BarViewController *barVC = [[BarViewController alloc] init];
+    barVC.data = self.data;
+    [self.navigationController pushViewController:barVC animated:YES];
 }
 
 @end
